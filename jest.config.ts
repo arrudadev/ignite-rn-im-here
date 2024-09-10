@@ -15,6 +15,9 @@ const config: Config = {
   transformIgnorePatterns: [
     'node_modules/(?!(jest-)?react-native|@react-native|@react-navigation)',
   ],
+  moduleNameMapper: {
+    '^@/(.*)$': '<rootDir>/src/$1',
+  },
 }
 
 export default config

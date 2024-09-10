@@ -49,7 +49,11 @@ export function Home() {
           onChangeText={setParticipantName}
         />
 
-        <TouchableOpacity style={styles.button} onPress={handleAddParticipant}>
+        <TouchableOpacity
+          testID="participant-add-button"
+          style={styles.button}
+          onPress={handleAddParticipant}
+        >
           <Text style={styles.buttonText}>+</Text>
         </TouchableOpacity>
       </View>
