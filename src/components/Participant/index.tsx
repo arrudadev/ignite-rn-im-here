@@ -12,7 +12,7 @@ export function Participant({ name, onRemove }: Props) {
       <Text style={styles.name}>{name}</Text>
 
       <TouchableOpacity
-        testID='participant-remove-button'
+        testID="participant-remove-button"
         style={styles.button}
         onPress={onRemove}
       >
